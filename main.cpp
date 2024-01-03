@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     engine.rootContext()->setContextProperty("sliderValue", 0.0);
 
-    engine.load(QUrl(QStringLiteral("/Users/kmr/QtAcademyCourse/Day5App/Main.qml")));
+    engine.load(QUrl("qrc:/Day5App/Main.qml")));
 
     if (engine.rootObjects().isEmpty()) {
         qWarning() << "Failed to load QML file.";
